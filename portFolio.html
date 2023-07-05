@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://kit.fontawesome.com/b1058b3612.css" crossorigin="anonymous">
+    <style>
+        * {
+
+            font-family: 'Trebuchet MS';
+            background-size: cover;
+        }
+    
+        body {
+            margin: 0;
+        }
+    
+        #grandDiv {
+            height: 100vh;
+            width: 100vw;
+            /* background-image: url('images/bg2.jpg');  */
+            background: linear-gradient(135deg, #0acfcf 0%, #e4db93 100%);            /
+            background-size: cover;
+            background-position: left;
+            display: flex;
+            flex-direction: row;
+            padding: 5%;
+            box-sizing: border-box;
+        }
+
+    
+        .nav {
+            background-color: transparent;
+            background-size: cover;
+            width: 10%;
+        }
+    
+        .nav ul {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            height: 100%;
+        }
+    
+        .nav ul li {
+            list-style: none;
+        }
+    
+        .pic {
+            background-image: url(images/lokesh.png);
+            background-size: 80%;
+            background-repeat: no-repeat;
+            background-position: bottom;
+            width: 35%;
+            text-align: center;
+            /* backdrop-filter: blur(px); */
+            /* background-color: rgba(255, 255, 255, 0.3); */
+            text-shadow: 0px 0px 30px rgb(104, 99, 99);
+            padding-right: 20px;
+            border-radius: 10px;
+        }
+    
+        .main {
+            display: flex;
+            flex-direction: column;
+            justify-content: end; /* Align content vertically */
+            /* background-color: rgba(255, 255, 255, 0.3); */
+            width: 55%;
+            height: 100%;
+            padding-top: 5%;
+            text-shadow: 0px 0px 30px rgb(104, 99, 99);
+
+        }
+
+        #frame{
+            width: 90%;
+            height: 90%;
+            border:none;
+        }
+
+        #contactDiv a{
+            color: black;
+        }
+        .icon-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .icon-container a {
+            display: inline-block;
+            margin: 0 10px;
+            text-decoration: none;
+            color: #000;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .icon-container a:hover {
+            transform: scale(1.5);
+        }
+
+        .icon-container a i {
+            font-size: 20px;
+        }
+
+        a:link,
+        a:visited {
+        color: #000; /* Replace with your desired color */
+        text-decoration: none; /* Optional: Remove underline */
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div id="grandDiv">
+        <div class="nav">
+            <ul>
+                <li><a  target ='education' href="about.html"><i class="fas fa-user fa-2xl"></i></a></li>
+                <li><a target ='education' href="education.html"><i class="fas fa-user-graduate fa-2xl"></i></a></li>
+                <li><a target ='education' href="skills.html"><i class="fas fa-cogs fa-2xl"></i></a></li>
+                <li><a target ='education' href="projects.html"><i class="fas fa-laptop-code fa-2xl"></i></a></li>
+                <li><a target ='education' href="contact.html"><i class="fas fa-address-card fa-2xl"></i></a></li>
+            </ul>
+        </div> 
+        <div class="main">
+            <iframe id="frame" name="education" src="about.html"></iframe>
+        </div>
+        <div class="pic">
+            <h1>LOKESH YARRAMALLU</h1>
+            <br><br>
+            <div class="icon-container">
+                <a href="https://www.linkedin.com/in/lokesh-yarramallu-085684255/" class="icon-linkedin" target="_blank"><i class="fab fa-linkedin "></i></a>
+                <a href="https://github.com/LokeshYarramallu" class="icon-github" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="mailto:lokeshyarramalluyarramalluloke@gmail.com" class="icon-mail" target="_blank"><i class="fas fa-envelope"></i></a>
+                <a href="https://discord.com/" class="icon-discord" target="_blank"><i class="fab fa-discord"></i></a>
+                <a href="tel:917095419591" class="icon-phone" target="_blank"><i class="fas fa-phone"></i></a>
+              </div><br><br>
+            <a href="Resume.html" class="icon-phone" target="_blank"><i class="fa-sharp fa-solid fa-file fa-xl"></i> <b>Download CV</b> </a>
+
+
+
+        </div>
+
+        
+    </div>
+    <script src="https://kit.fontawesome.com/b1058b3612.js"></script>
+</body>
+</html>
